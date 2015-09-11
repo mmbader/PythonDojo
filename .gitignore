@@ -58,6 +58,7 @@ target/
 
 # exclude IDE files
 .idea/
+*.iml
 
 # exclude sqlite database from course
 data/phonebook.sqlite3
