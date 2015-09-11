@@ -55,3 +55,9 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# exclude IDE files
+.idea/
+
+# exclude sqlite database from course
+data/phonebook.sqlite3
