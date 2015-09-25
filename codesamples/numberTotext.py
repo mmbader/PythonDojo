@@ -70,7 +70,10 @@ class NumberToText:
                         text += " Hundred "
 
                 if tenth > 0:
-                    text += self.__numbers.get(tenth, self.__tenths.get(int(tenth/10))+" "+self.__numbers.get(tenth % 10))
+                    if tenth in self.__numbers:
+                        text += self.__numbers.get(tenth)
+                    else:
+                        text += self.__tenths.get(int(tenth/10))+" "+self.__numbers.get(tenth % 10)
 
                 text += " " + self.__prefix.get(prefixIdx, "") + " "
 
