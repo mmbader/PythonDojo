@@ -1,5 +1,5 @@
 try:
-    fhandler = open("mbox-short.txt", "r")
+    fhandler = open("../data/mbox-short.txt", "r")
 except IOError:
     print "File 'mbox-short.txt' does not exist"
     quit()
