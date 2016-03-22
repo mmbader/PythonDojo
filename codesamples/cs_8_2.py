@@ -13,3 +13,12 @@ class Employee:
 
     def displayEmployeeName(self):
         print 'Name:', self.name
+
+employee1 = Employee("Zara", 2000)
+employee2 = Employee("David", 2500)
+
+employee1.displayNumEmployees()
+employee1.displayEmployeeName()
+
+employee2.displayEmployeeName()
+employee2.displayNumEmployees()
