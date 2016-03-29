@@ -13,7 +13,7 @@ table = list()
 for data in tabledata:
     if data.span is not None:
         comments = data.span.string
-    elif data.string != "Name" or data.string != "Comments":
+    else:
         name = data.string
 
     if name is not None and comments is not None:
